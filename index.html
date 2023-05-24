@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Weartake</title>
+</head>
+<body>
+    <header class="navbar">
+       <div class="container">
+            <div class="menu-flex">
+                <div class="menu-column">
+                    <h1 class="logo-title">
+                        Weartake
+                    </h1>
+                </div>
+                <div class="menu-column menu-second-column">
+                    <nav class="menu-nav">
+                        <ul>
+                            <li>
+                                <a href="javascript:postItens(data);">Todos</a>
+                            </li>
+                            <li>
+                                <a href="javascript:postItens(acessory);">Acessórios</a>
+                            </li>
+                            <li>
+                                <a href="javascript:postItens(shoes);">Calçados</a>
+                            </li>
+                            <li>
+                                <a href="javascript:postItens(shirts);">Camisetas</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+       </div>
+    </header>
+    <main class="container">
+        <section class="showcase">
+            <ul class="products-content" id="products">
+             
+            </ul>
+        </section>
+        <aside class="shopping-cart">
+            <form action="" class="search-content">
+                <input type="text" class="search-input" id="search" placeholder="Digite aqui sua pesquisa" >
+                <input type="button" value="Pesquisar" class="search-button">
+            </form>
+            <div class="cart-body">
+                <h4 class="cart-title">Carrinho de compras</h4>
+                <ul class="cart-content">
+                    <li class="cart-product-empty">
+                        <h4 class="cart-empty">Adicione itens</h4>
+                        <span class="cart-empty-small">Adicione itens</span>
+                    </li>
+                </ul>
+                
+                <ul class="cart-footer hidden">
+                    <li class="cart-qty">Quantidade: <span class="itens-quantity">0</span></li>
+                    <li class="cart-total">Total: <span class="total-value">0</span></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <script src="./js/database.js"></script>
+    <script src="./js/index.js"></script> 
+    <script src="./js/search.js"></script>
+</body>
+</html>
